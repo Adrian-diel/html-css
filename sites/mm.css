@@ -1,0 +1,194 @@
+@charset "UFT-8";
+
+@font-face {
+    font-family:"Android" ;
+    src: url("IDroid.otf") format("Opentype");
+    font-weight: normal
+}
+
+@font-face {
+    font-family: "Bebas neue" ;
+    src: url(BebasNeue-Regular.otf) format("Opentype");
+}
+
+    :root {
+    --cor0:  #7CEB7C;
+    --cor01: #569F56;
+    --cor02: #34D934;
+    --cor03: #228B22;
+    --cor04: #115a30;
+    --cor05: #062706;
+
+    --fontpadrao: Arial, Helvetica, sans-serif;
+    --font0: "Bebas neue";
+    --font01:"Android","san-serif";
+    }
+    
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    body {
+    background-color: var(--cor0);
+    font-family: var(--fontpadrao);
+    }
+    /* divs importantes */
+    header {
+        background: linear-gradient(to bottom, var(--cor03), var(--cor04)), no-repeat;
+        color: white;
+        font-family: var(--fontpadrao);
+        min-height: 150px;
+        padding-top: 40px;
+        text-align: center;
+    }
+    header > h1 {
+    font-family: var(--font0);
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.432);
+    }
+    header > p {
+    color: white;
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.432);
+    }
+    nav  {
+        background-color: var(--cor04);
+        padding: 10px;
+        box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.575)
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 12px;
+        transition-duration: 0.5s;
+    }
+    nav > a:hover {
+        background-color: rgba(30, 160, 30, 0.822);
+        color: white;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    main {
+        background-color: white;
+        padding: 20px;
+        margin: auto;
+        margin-bottom: 35px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        max-width: 800px;
+        min-width: 400px
+    }
+    main  h1 {
+        color: rgba(0, 0, 0, 0.774);
+        font-family: var(--font01);
+        padding-left: 8px;
+        padding-bottom: 3px;
+    }
+    main  h2 {
+        color: var(--cor03);
+        font-family: var(--font01);
+        background: linear-gradient( to right, rgba(28, 182, 28, 0.637) , transparent);
+        font-size: 1.2em;
+        padding-left: 8px;
+        padding-bottom: 2px;
+        margin: 0px -20px
+    }
+    main  p{
+        text-indent: 25px;
+        line-height: 2em;
+        font-family: var(--fontpadrao);
+        color: rgba(0, 0, 0, 0.774);
+        margin: 16px 0px;
+    }
+    main  abbr {
+        text-decoration: none;
+    }
+    main  a {
+        color: black;
+        background-color: #34D934;
+        padding-right: 5px;
+        padding-left: 5px;
+        text-decoration: none;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    main a:hover {
+        text-decoration: underline;
+    }
+
+    aside {
+        background-color: rgba(0, 150, 0, 0.781);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
+    }
+    aside > h3 {
+        color: white;
+        background-color: var(--cor04);
+        font-family: var(--fontpadrao);
+        padding: 5px 10px;
+        margin: -10px -10px 0px -10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    aside ul {
+        list-style-position: inside;
+        list-style-type: "\2714\00A0\00A0";
+        columns: 2;
+    }
+    aside a {
+        background-color:  rgba(0, 150, 0, 0.781);  
+        text-decoration: none;
+        font-weight: bold;
+    }
+    aside a:hover {
+        text-decoration: underline;
+    }
+    footer {
+        color: white;
+        background-color: var(--cor04);
+        text-align: center;
+    }
+    footer a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    footer a :hover {
+        text-decoration: underline;
+    }
+    strong {
+        color: black;
+    }
+
+    /* Classes e indent */
+    #pequena {
+        max-width: 350px;
+        margin: auto;
+        display: block;
+    }
+    a.externo::after     {
+        content: "\1F517"
+    }
+    div.video {
+        position: relative;
+        background-color: var(--cor04);
+        margin-bottom: 10px;
+        padding: 20px;
+        padding-bottom: 58%;
+        margin: 0px -20px 30px -20px;
+    }
+    div.video > iframe {
+     position: absolute;
+     top: 5%;
+     right: 5%;
+     width: 90%;
+     height: 90%;
+    }

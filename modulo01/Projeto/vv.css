@@ -1,0 +1,116 @@
+@charset "UFT-8";
+ 
+@font-face {
+    font-family:"Antiga" ;
+    src: url(OldLondon.ttf) format(truetype);
+}
+body{
+background-color: #5697A6;
+}
+
+div#d1, div#d2, div#d3{
+    background-color: #6382BF;
+   }
+   
+   div#c0 {
+    background-color: green;
+    height: auto;
+    width: auto;
+   }
+   div#c0 > ul{
+    display: none;
+   }
+   div#c0:hover > ul {
+    display: block;
+    color: aliceblue;
+    height: 300px;
+    width: 600px;
+   }
+
+div#c1 {
+    background-color: green;
+}
+div#c1 > p{
+    display: none;
+}
+div#c1:hover > p {
+    display: block;
+    color: aliceblue;
+    height: 300px;
+    width: 600px;
+ }
+
+ div#c2 {
+    background-color: yellow;
+ }
+ div#c2 > p {
+    display:none;
+ }
+ div#c2:hover > p {
+  color: aliceblue;
+  display: block;
+  height: 300px;
+  width: 600px;
+  border
+ }
+
+  div#c3 {
+    background-color: red;
+
+  }
+  div#c3 > p {
+    display: none
+  }
+  div#c3:hover > p {
+    display: block;
+    color: aliceblue;
+    height: 300px;
+    width: 600px;
+  }
+ #principal {
+   text-align: center;
+   font-family:"Antiga";
+ }
+
+.primeira {
+    color: #669b66da;
+}
+.segunda {
+    color: #bbbb5fe7;
+}
+.terceira {
+    color: rgba(209, 95, 95, 0.76);
+}
+h1{
+    background-color: #6382BF;
+    color: #0D1F26;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 2em;
+}
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1A3540;
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+ 
+a {
+  text-decoration: none;
+}
+a:visited{
+  color: red;
+
+}
+a:hover {
+  color: aliceblue;
+  text-decoration: underline;
+  font-weight: bold;
+  content:"❥"
+}
+a:hover::before {
+  color: azure;
+  font-weight: bold;
+  content:"❥"
+}

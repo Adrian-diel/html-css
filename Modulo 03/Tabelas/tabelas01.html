@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de tabelas</title>
+
+    <style>
+
+        table {
+            position: relative;
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption {
+            background-color: black;
+            color: aliceblue;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px 0px;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 50px 0px;
+        }
+        th {
+            background-color: gray;
+        }
+        td {
+            text-align: center;
+        }
+        .num {
+            background-color: rgba(128, 128, 128, 0.555);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listas</h1>
+
+    <section>
+        <table>
+            <thead>
+            <caption>População das unidades federativas do Brasil</caption>
+                <tr>
+                  <th scope="col" style="width: 15px;">posição</th>
+                  <th scope="col">Unidade Federativa</th>
+                  <th scope="col" style="width: 30px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="num">1</td>
+                    <td>São Paulo</td>
+                    <td>46 081 801</td>
+                </tr>
+                <tr>
+                    <td class="num">2</td>
+                    <td>Minas Gerais</td>
+                    <td>21 393 441</td>
+                </tr>
+                <tr>
+                    <td class="num">3</td>
+                    <td>Rio de janeiro</td>
+                    <td>17 223 547</td>
+                </tr>
+                <tr>
+                    <td class="num">4</td>
+                    <td>Bahia</td>
+                    <td>14 870 907</td>
+                </tr>
+                <tr>
+                    <td class="num">5</td>
+                    <td>Paraná</td>
+                    <td>11 890 517</td>
+                </tr>
+                <tr>
+                    <td class="num">6</td>
+                    <td>Rio Grande do Sul</td>
+                    <td>11 233 263</td>
+                </tr>
+                <tr>
+                    <td class="num">7</td>
+                    <td>Pernambuco</td>
+                    <td>9 058 931</td>
+                </tr>
+                <tr>
+                    <td class="num">8</td>
+                    <td>Ceará</td>
+                    <td>9 268 836</td>
+                </tr>
+                <tr>
+                    <td class="num">9</td>
+                    <td>Pará</td>
+                    <td>8 711 196</td>
+                </tr>
+                <tr>
+                    <td class="num">10</td>
+                    <td>Santa Ctarina</td>
+                    <td>8 187 029</td>
+                </tr>
+            </tbody>
+            <tfooter>
+             <tr>
+                <th scope="row" colspan="2">Por região</th>
+                <td><strong> 210.147.125</strong></td>
+             </tr>
+            </tfooter>
+        </table>
+    </section>
+</body>
+</html>
